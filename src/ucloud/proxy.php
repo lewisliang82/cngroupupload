@@ -1,5 +1,5 @@
 <?php
-namespace CNUpload\Upload\Ucloud;
+namespace Lewisliang82\CNUpload\Upload\Ucloud;
 
 require_once("conf.php");
 require_once("http.php");

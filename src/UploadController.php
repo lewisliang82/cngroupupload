@@ -1,5 +1,5 @@
 <?php
-namespace CNUpload\Upload;
+namespace Lewisliang82\CNUpload\Upload;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Response;

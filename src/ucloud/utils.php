@@ -1,5 +1,5 @@
 <?php
-namespace CNUpload\Upload\Ucloud;
+namespace Lewisliang82\CNUpload\Upload\Ucloud;
 require_once("mimetypes.php");
 
 define('BLKSIZE', 4*1024*1024);

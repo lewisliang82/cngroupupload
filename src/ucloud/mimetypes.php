@@ -1,5 +1,5 @@
 <?php
-namespace CNUpload\Upload\Ucloud;
+namespace Lewisliang82\CNUpload\Upload\Ucloud;
 global $mimetype_complete_map;
 $mimetype_complete_map = array(
     ".3dm" => "x-world/x-3dmf",

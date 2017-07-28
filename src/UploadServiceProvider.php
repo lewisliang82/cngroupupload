@@ -1,5 +1,5 @@
 <?php
-namespace CNUpload\Upload;
+namespace Lewisliang82\CNUpload\Upload;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 

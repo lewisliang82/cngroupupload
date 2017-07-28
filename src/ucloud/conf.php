@@ -1,5 +1,5 @@
 <?php
-namespace CNUpload\Upload\Ucloud;
+namespace Lewisliang82\CNUpload\Upload\Ucloud;
 
 global $SDK_VER;
 global $UCLOUD_PROXY_SUFFIX;
