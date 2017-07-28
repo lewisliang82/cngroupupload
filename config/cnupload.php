@@ -7,9 +7,9 @@
 /* 前后端通信相关的配置,注释只允许使用多行方式 */
 return [
 
-    'upload_routes_config_map'=>[
-        'cnupload/server'=>'upload', //default route
-        'cnupload/test' =>'upload',
+    'routes_map'=>[
+        'lewisliang82/cnupload/server'=>'upload', //default route
+        'lewisliang82/cnupload/test' =>'upload',
     ],
     /*
     |--------------------------------------------------------------------------
