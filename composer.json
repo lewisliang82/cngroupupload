@@ -22,8 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Ender\\UEditor\\": "src/"
+      "CNUpload\\Upload\\": "src/"
     }
-  },
-  "minimum-stability": "dev"
+  }
 }
