@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CNUpload\\Upload\\": "src/"
+      "Lewisliang82\\CNUpload\\Upload\\": "src/"
     }
   },
   "minimum-stability": "dev",
