@@ -3,6 +3,7 @@
   "description": "cngroupupload",
   "keywords": ["upload"],
   "homepage": "https://github.com/lewisliang82/cngroupupload",
+  "minimum-stability": "dev",
   "version": "0.0.1",
   "license": "MIT",
   "authors": [
