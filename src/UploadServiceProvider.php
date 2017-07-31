@@ -59,7 +59,7 @@ class UploadServiceProvider extends LaravelServiceProvider {
 
         $this->loadViewsFrom(__DIR__.'/../resources/views','cnupload');
 
-        $this->publishes([__DIR__.'/../resources/pviews' => base_path('resources/views/cnupload')],'view');
+        $this->publishes([__DIR__.'/../resources/views' => base_path('resources/views/cnupload')],'view');
     }
 
     private function handleRoutes() {

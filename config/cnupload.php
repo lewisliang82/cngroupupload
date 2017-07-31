@@ -8,8 +8,8 @@
 return [
 
     'routes_map'=>[
-        'lewisliang82/cnupload/server'=>'upload', //default route
-        'lewisliang82/cnupload/test' =>'upload',
+        'lewisliangg82/cnupload/server'=>'cnupload', //default route
+        'lewisliangg82/cnupload/test' =>'cnupload',
     ],
     /*
     |--------------------------------------------------------------------------
