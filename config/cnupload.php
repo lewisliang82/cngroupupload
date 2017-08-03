@@ -32,8 +32,12 @@ return [
             'bucket'=>'',
             'url'=>'http://xxx.clouddn.com',//七牛分配的CDN域名,注意带上http://
         ],
-        'uclod' => [
-
+        'ucloud' => [
+            'bucketUrl'     => '.ufile.ucloud.com.cn',
+            'buket'         => '',
+            'proxy_suffix'  => '',
+            'public_key'    => '',
+            'private_key'   => ''
         ]
     ],
     /**

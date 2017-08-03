@@ -29,12 +29,15 @@ class UploadController extends BaseController{
         $md5_file = md5_file($file->getPathname());
         $image_name = "{$md5_file}.".$file->getClientOriginalExtension();
 
+        $buket = config('cnupload.core.ucloud.buket');
+        $buketUrl = config('cnupload.core.ucloud.bucketUrl');
+
         $proxy = new proxy();
         $key = "upload/{$image_name}";
-        $ret = $proxy->UCloud_PutFile('XXXXX', $key, $file->getPathname());
+        $ret = $proxy->UCloud_PutFile($buket, $key, $file->getPathname());
 
         if(null == $ret[1]){
-            return response()->json(['status'=>true, 'host'=>"http://cngroup-img.ufile.ucloud.com.cn/{$key}", 'ext'=>$file->getClientOriginalExtension()], 200, [], JSON_UNESCAPED_UNICODE);
+            return response()->json(['status'=>true, 'host'=>"http://{$buket}{$buketUrl}/{$key}", 'ext'=>$file->getClientOriginalExtension()], 200, [], JSON_UNESCAPED_UNICODE);
         }else{
             return response()->json(['status'=>false, 'msg'=>'上传异常'], 400, [], JSON_UNESCAPED_UNICODE);
         }
