@@ -2,7 +2,7 @@ Installation
 -----------------
 via composer
 ```
-composer require "composer require lewisliang82/cngroupupload:dev-master"
+composer require "lewisliang82/cngroupupload:dev-master"
 ```
 
 config/app.php addServiceProvider: 
@@ -12,18 +12,19 @@ Lewisliang82\CNUpload\Upload\UploadServiceProvider::class,
 
 publish resources
 ```
-php artisan vendor:publis
+php artisan vendor:publish  --provider='Lewisliang82\CNUpload\Upload\UploadServiceProvider' --force
 ```
 
 ucloud config
-file, src/uclod/conf.php
+config/cnupload.php
 ```text
-$SDK_VER = '1.0.8';
-$UCLOUD_PROXY_SUFFIX = '';
-$UCLOUD_PUBLIC_KEY = '';
-$UCLOUD_PRIVATE_KEY = '';
-$UCLOUD_PUB_BUCKET = '';
-$UCLOUD_PRI_BUCKET = '';
+'ucloud' => [
+    'bucketUrl'     => '',
+    'buket'         => '',
+    'proxy_suffix'  => '',
+    'public_key'    => '',
+    'private_key'   => ''
+]
 ```
 include js/css
 ```html
